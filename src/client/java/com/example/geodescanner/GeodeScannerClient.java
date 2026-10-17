@@ -67,7 +67,7 @@ public class GeodeScannerClient implements ClientModInitializer {
 		BlockPos c = geode.center();
 		if (!announced.add(c.asLong())) return;
 
-				mc.gui.getChat().addMessage(
+				mc.player.sendSystemMessage(
 				Component.literal("Große Amethyst-Geode bei " + c.getX() + " " + c.getY() + " " + c.getZ()
 						+ " (" + geode.clusters() + " ausgewachsene Cluster, "
 						+ geode.largeBuds() + " große / " + geode.mediumBuds() + " mittlere / "
